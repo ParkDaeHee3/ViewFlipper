@@ -1,49 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity"
+   android:orientation="vertical">
 
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal">
 
-      <Button
-          android:id="@+id/btnPrev"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:text="이전화면"/>
+     <!--
+     <Button
+         android:id="@+id/btnPrev"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="이전화면"/>
 
-      <Button
-          android:id="@+id/btnNext"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:text="다음화면" />
+     <Button
+         android:id="@+id/btnNext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="다음화면" />
+       -->
+     <Button
+         android:id="@+id/btnStart"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="사진 보기"/>
+     <Button
+         android:id="@+id/btnStop"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="사진 보기 정지"/>
+ </LinearLayout>
 
-  </LinearLayout>
+   <ViewFlipper
+       android:id="@+id/viewFlipper1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+    <!-- [LinearLayout]
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ff0000">
+          </LinearLayout>
 
-    <ViewFlipper
-        android:id="@+id/viewFlipper1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#45A81A">
+          </LinearLayout>
+                -->
+          <ImageView
+              android:id="@+id/imageVew1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:src="@drawable/cat"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ff0000">
-        </LinearLayout>
+       <ImageView
+           android:id="@+id/imageVew2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/dog"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#45A81A">
-        </LinearLayout>
-    </ViewFlipper>
+       <ImageView
+           android:id="@+id/imageVew3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/emo_im_cool"/>
+
+       <ImageView
+           android:id="@+id/imageVew4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/horse"/>
+
+
+       <ImageView
+           android:id="@+id/imageVew5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/icon"/>
+
+
+       <ImageView
+           android:id="@+id/imageVew6"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/icon1"/>
+
+
+       <ImageView
+           android:id="@+id/imageVew7"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/s12"/>
+       <ImageView
+           android:id="@+id/imageVew8"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/rabbit"/>
+       <ImageView
+           android:id="@+id/imageVew9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scr="@drawable/u14"/>
+      </ViewFlipper>
 </LinearLayout>
+
+
+
